@@ -1,0 +1,66 @@
+﻿@model WardrobeMVCProject1._5.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Purchase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Purchase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Accessory.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Accessory.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bottom.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bottom.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sho.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sho.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Top.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Top.Photo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,90 @@
+﻿@model WardrobeMVCProject1._5.Models.Top
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Top</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Purchase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Purchase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color.ColorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ColorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occasion.OccasionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season.SeasonName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.SeasonName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
