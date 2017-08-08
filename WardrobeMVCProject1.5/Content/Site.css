@@ -1,18 +1,24 @@
 ﻿body {
+
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0px 0px 0px 0px;
+    background-color: #b4b4b4;
+   /*argin: 0px 0px 0px 0px;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
+
     white-space: normal;
 }
 
@@ -20,5 +26,190 @@
 input,
 select,
 textarea {
+
     max-width: 280px;
+}
+
+
+.backgroundBackground {
+
+    background-image: url('images/backgroundfashion4.jpg');
+    height: 1000px;
+    width: 1900px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: -60px 10px 10px -90px;
+}
+.backgroundBackgroundcontainer {
+
+    padding: 0px 0px 0px 0px;
+}
+
+.Daughters{
+
+    font-family: Lovers Quarrel;
+    font-size: 140px;
+    color: #fff;
+    /* background-color: #2997a9; */
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: -20px -170px 0px; 
+}
+.header-top-container{
+
+  background-color:  rgba(211, 185, 179, 0.38);
+}
+.navbar-inverse {
+
+    background-color: #eee4e2;
+    border-color: #ffffff;
+}
+.logo{
+
+    opacity:0.4;
+   text-align:center;
+}
+
+.full-circle{
+
+    background-color:rgba(204, 0, 102, 0);
+    border:3px solid #fff;
+    height:150px;
+    width:150px;
+    -moz-border-radius:75px;
+    -webkit-border-radius:75px;
+    opacity: 0.5;
+}
+p.full-circleimg{
+
+     /*opacity: 0.4;
+    text-align: center;
+    padding-left: 300px;
+    border-radius: 50%;
+    text-align: center;*/
+     padding-left: 859px;
+
+}
+img.img-circle{
+
+    opacity: 0.4;
+    text-align: center;
+    padding-left: 300px;
+    border-radius: 50%;
+    text-align: center;
+}
+.Shop{
+
+    font-family: Lovers Quarrel;
+    font-size: 140px;
+    /* background-color: #2997a9; */
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: -250px -170px 0px;
+    color: rgb(245, 188, 177);
+
+}
+.box {
+
+    height: 1000px;
+    width: 1900px;
+    margin: 0px 0px 0px 0px;
+    background-color:white;
+    opacity:0.5;
+}
+.sunnybackground{
+
+   /* background-image: url('images/fashionbackground1.jpg');
+    height:40000px;
+    background-repeat:no-repeat*/
+    background-color: #b4b4b4;
+    margin: 0px;
+    padding: 0px 20px 85px 0px;
+    
+}
+
+.tops{
+
+
+
+
+}
+#fashion{
+
+   /*width:300px;
+    height:40000px;
+    background-repeat:no-repeat*/
+    width: 00px;
+    height: 0px;
+    background-repeat: no-repeat;
+    float: right;
+    padding: 00px 10px 10px 10px;
+    
+}
+.glasses{
+  
+    
+    height: 1700px;
+    width: 900.66px;
+    background-color: #b4b4b4;
+    padding: 0px 100px 500px 0px;
+
+}
+.finalgrey{
+
+    background-color: #b4b4b4;
+}
+
+.cardOne{
+
+  background-color: rgb(131, 177, 167);
+
+}
+.cardTwo{
+
+   background-color: rgb(186, 98, 122);
+}
+
+.cardThree{
+
+background-color: rgba(226, 249, 101, 0.65);
+
+
+}
+
+.cardFour{
+
+   background-color: rgb(141, 114, 224);
+}
+
+.shoes{
+
+    background-color: #b4b4b4;
+    padding: 0px 100px 590px 0px
+
+}
+
+.jeans{
+  
+    height: 1890px;
+    width: 900.66px;
+    background-color: #b4b4b4;
+    padding: 0px 100px 500px 0px;
+}
+
+.access{
+
+    height: 1634px;
+    width: 900.66px;
+    background-color: rgb(152, 147, 143);
+    padding: 0px 100px 500px 0px;
+}
+
+.sunnybackgroundaccess{
+
+    background-color: #98938f;
+    margin: 0px;
+    padding: 0px 0px 705px 0px
+
+
 }

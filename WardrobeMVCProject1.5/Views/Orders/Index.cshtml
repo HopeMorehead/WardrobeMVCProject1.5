@@ -52,7 +52,7 @@
                 @Html.DisplayFor(modelItem => item.Purchase)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Accessory.Photo)
+                <img class="img-responsive TestPhoto" src="@Html.DisplayFor(modelItem => item.Accessory.Photo)" alt="Earings" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Bottom.Photo)

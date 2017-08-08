@@ -26,6 +26,7 @@ namespace WardrobeMVCProject1._5
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
         }
     }
 }

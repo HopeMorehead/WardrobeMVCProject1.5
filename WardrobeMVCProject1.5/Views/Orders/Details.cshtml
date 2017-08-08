@@ -29,11 +29,10 @@
         <dt>
             @Html.DisplayNameFor(model => model.Accessory.Photo)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Accessory.Photo)
+            <img class="img-responsive TestPhoto" src="@Html.DisplayFor(model => model.Accessory.Photo)" alt="Earings" />
         </dd>
-
+       
         <dt>
             @Html.DisplayNameFor(model => model.Bottom.Photo)
         </dt>

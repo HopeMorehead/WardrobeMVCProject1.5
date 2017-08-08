@@ -6,8 +6,66 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lovers+Quarrel:300,400,600,700&amp;lang=en" />
 </head>
 <body>
+
+
+
+
+
+    <div>
+
+        <div class="header-primary-container" style="background-color: #b6b6b6;color: #fdfafa;text-align: center;line-height: 44px;">
+            💖Something new everyday 💖
+        </div>
+
+    </div>
+
+    <div id="top" class="header-container header-regular">
+
+
+        <div class="header-container2">
+            <div class="header-container3">
+
+                <div class="header-top-container">
+
+
+                    <div class="header-top-container header-container container clearer" style="width:0px; height: 200px;">
+
+                        <div class="inner-container">
+                            <div class="mini">
+                                <p class="Daughters">Daughters</p>
+
+                            </div>
+
+                            <div class="header-primary-continer">
+                                <div class="header-primary-header continer">
+                                    <div class="inner-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -16,13 +74,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("For Every Daughter", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                    <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
+                    <li>@Html.ActionLink("Accessories", "Index", "Accessories")</li>
+                    <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
+
+
                 </ul>
             </div>
         </div>
@@ -31,12 +93,13 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Clothing for every Daughter</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>

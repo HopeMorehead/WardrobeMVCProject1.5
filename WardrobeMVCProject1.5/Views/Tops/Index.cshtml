@@ -1,81 +1,168 @@
 ﻿@model IEnumerable<WardrobeMVCProject1._5.Models.Top>
 
+
+
 @{
     ViewBag.Title = "Index";
 }
+<div class="finalGrey">
 
-<h2>Index</h2>
+    <div class="row">
+        <div class="sunnybackground">
+            <div class="col-lg-12">
+                <p id="fashion"><img class="glasses" src="~/Content/images/fashionbackground1.jpg" /></p>
+                <p>
+                    @Html.ActionLink("Create New", "Create")
+                </p>
+                @*<div class="container">
+                        <div class="row">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ItemNumber)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Purchase)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color.ColorName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </th>
-        <th></th>
-    </tr>
+                            <div class="col-md-3">
+                                @Html.DisplayNameFor(model => model.Photo)
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ItemNumber)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Purchase)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color.ColorName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.SeasonName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
-        </td>
-    </tr>
-}
+                                @Html.DisplayNameFor(model => model.Name)
 
-</table>
+                                @Html.DisplayNameFor(model => model.Type)
+
+                                @Html.DisplayNameFor(model => model.Price)
+
+                                @Html.DisplayNameFor(model => model.ItemNumber)
+
+                                @Html.DisplayNameFor(model => model.Purchase)
+
+                                @Html.DisplayNameFor(model => model.Color.ColorName)
+
+                                @Html.DisplayNameFor(model => model.Occasion.OccasionName)
+
+                                @Html.DisplayNameFor(model => model.Season.SeasonName)
+                            </div>
+
+                        </div>
+                    </div>*@
+
+
+
+                @foreach (var item in Model)
+            {
+                    <div class="container tops">
+
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="cardOne">
+                                    <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="John" style="width:100%">
+                                    <div class="container">
+                                    </div>
+                                    @Html.DisplayFor(modelItem => item.Name)
+
+                                    @Html.DisplayFor(modelItem => item.Type)
+
+                                    @Html.DisplayFor(modelItem => item.Price)
+
+                                    @Html.DisplayFor(modelItem => item.ItemNumber)
+
+                                    @Html.DisplayFor(modelItem => item.Purchase)
+
+                                    @Html.DisplayFor(modelItem => item.Color.ColorName)
+
+                                    @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
+
+                                    @Html.DisplayFor(modelItem => item.Season.SeasonName)
+                                    <p><button>buy</button></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="cardTwo">
+                                    <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="John" style="width:100%">
+                                    <div class="container">
+                                    </div>
+                                    @Html.DisplayFor(modelItem => item.Name)
+
+                                    @Html.DisplayFor(modelItem => item.Type)
+
+                                    @Html.DisplayFor(modelItem => item.Price)
+
+                                    @Html.DisplayFor(modelItem => item.ItemNumber)
+
+                                    @Html.DisplayFor(modelItem => item.Purchase)
+
+                                    @Html.DisplayFor(modelItem => item.Color.ColorName)
+
+                                    @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
+
+                                    @Html.DisplayFor(modelItem => item.Season.SeasonName)
+                                    <p><button>buy</button></p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <div class="cardThree">
+                                    <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="John" style="width:100%">
+                                    <div class="container">
+                                    </div>
+                                    @Html.DisplayFor(modelItem => item.Name)
+
+                                    @Html.DisplayFor(modelItem => item.Type)
+
+                                    @Html.DisplayFor(modelItem => item.Price)
+
+                                    @Html.DisplayFor(modelItem => item.ItemNumber)
+
+                                    @Html.DisplayFor(modelItem => item.Purchase)
+
+                                    @Html.DisplayFor(modelItem => item.Color.ColorName)
+
+                                    @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
+
+                                    @Html.DisplayFor(modelItem => item.Season.SeasonName)
+                                    <p><button>buy</button></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="cardFour">
+                                    <img src="@Html.DisplayFor(modelItem => item.Photo)" alt="John" style="width:100%">
+                                    <div class="container">
+                                    </div>
+                                    @Html.DisplayFor(modelItem => item.Name)
+
+                                    @Html.DisplayFor(modelItem => item.Type)
+
+                                    @Html.DisplayFor(modelItem => item.Price)
+
+                                    @Html.DisplayFor(modelItem => item.ItemNumber)
+
+                                    @Html.DisplayFor(modelItem => item.Purchase)
+
+                                    @Html.DisplayFor(modelItem => item.Color.ColorName)
+
+                                    @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
+
+                                    @Html.DisplayFor(modelItem => item.Season.SeasonName)
+                                    <p><button>buy</button></p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <div>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.TopID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.TopID })
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

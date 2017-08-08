@@ -26,52 +26,52 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model)
+    @foreach (var item in Model)
 
 
-{
-    if (item.Purchase == true)
     {
-    <tr>
-        <td>
+        if (item.Purchase == true)
+        {
+            <tr>
+                <td>
 
 
-            <a href="@Url.Action("ToggleDone", new { id=item.OrderID })">
-                @if (item.Purchase==true)
-                    {
-                    <span class="glyphicon glyphicon-check"></span>
-                }
-                else
-                {
-                    <span class="glyphicon glyphicon-unchecked"></span>
-                }
-            </a>
+                    <a href="@Url.Action("ToggleDone", new { id=item.OrderID })">
+                        @if (item.Purchase == true)
+                        {
+                            <span class="glyphicon glyphicon-check"></span>
+                        }
+                        else
+                        {
+                            <span class="glyphicon glyphicon-unchecked"></span>
+                        }
+                    </a>
 
 
-            @Html.DisplayFor(modelItem => item.CustomerName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Purchase)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Accessory.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Bottom.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sho.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Top.Photo)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.OrderID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.OrderID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.OrderID })
-        </td>
-    </tr>
+                    @Html.DisplayFor(modelItem => item.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Purchase)
+                </td>
+                <td>
+                    <img class="img-responsive TestPhoto" src="@Html.DisplayFor(modelItem => item.Accessory.Photo)" alt="Earings" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bottom.Photo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sho.Photo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Top.Photo)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.OrderID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.OrderID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.OrderID })
+                </td>
+            </tr>
+        }
     }
-}
 
 </table>

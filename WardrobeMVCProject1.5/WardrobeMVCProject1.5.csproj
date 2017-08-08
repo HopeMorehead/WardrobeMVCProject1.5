@@ -214,6 +214,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\backgroundfashion2.jpg" />
+    <Content Include="Content\images\backgroundfashion4.jpg" />
+    <Content Include="Content\images\fashionbackground1.jpg" />
+    <Content Include="Content\images\fashionbackground3.jpg" />
+    <Content Include="Content\images\floral.jpg" />
+    <Content Include="Content\images\jeans.jpg" />
+    <Content Include="Content\images\shoes.jpg" />
+    <Content Include="Content\images\sideways.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
